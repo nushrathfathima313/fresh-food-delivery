@@ -1,0 +1,155 @@
+.navbar {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar hr {
+    
+    position: absolute; /* Position the hr element absolutely */
+    width: calc(100% - 40px); /* Make the hr element span the entire width of the navbar */
+    bottom: 790px; /* Position the hr just below the navbar */
+    margin: 10px 0px; /* Remove any default margin */
+    height: 2px;
+    background-color: #E2E2E2;
+    border: none;
+    transition: bottom 0.3s; /* Add smooth transition for the hover effect */
+  }
+.navbar .logo {
+  width: 150px;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  color:black;
+  font-size: 18px;
+}
+
+.navbar-menu .active {
+  padding-bottom: 2px;
+  border-bottom: 2px solid black;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.navbar-search-icon {
+  position: relative;
+}
+
+.navbar-search-icon .dot {
+  position: absolute;
+  min-width: 10px;
+  min-height: 10px;
+  background-color: #FF4C24;
+  border-radius: 5px;
+  top: -8px;
+  right: -8px;
+}
+
+.cart-item-count {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 3px 6px;
+  font-size: 12px;
+}
+
+.navbar-right img {
+  border: none; /* Remove borders from the search icon */
+}
+
+.navbar-right input[type="text"] {
+  border-radius: 20px; /* Add curved border to the search input */
+  padding: 10px; /* Adjust padding for better appearance */
+  font-size: 16px; /* Increase font size for the placeholder */
+  border: 1px solid green; /* Add blue border to the search input */
+}
+
+.navbar-right input[type="text"]::placeholder {
+  font-weight: bold; /* Make the placeholder text thicker */
+}
+
+.navbar-right button {
+  background: transparent;
+  font-size: 16px;
+  color: #49557E;
+  border: 1px solid green;
+  padding: 15px 30px 10px; /* Added extra padding to the top */
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navbar-right button:hover {
+  background: green;
+  color: white;
+}
+.navbar-right hr{
+    margin: 10px 0px;
+    height: 2px;
+    background-color: #E2E2E2;
+    border: none;
+}
+@media screen and (max-width: 1050px) {
+  .navbar .logo {
+    width: 140px;
+  }
+
+  .navbar-menu {
+    gap: 20px;
+    font-size: 17px;
+  }
+
+  .navbar-right {
+    gap: 30px;
+  }
+
+  .navbar-right img {
+    width: 22px;
+  }
+
+  .navbar-right button {
+    padding: 8px 25px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .navbar .logo {
+    width: 120px;
+  }
+
+  .navbar-menu {
+    gap: 15px;
+    font-size: 16px;
+  }
+
+  .navbar-right {
+    gap: 20px;
+  }
+
+  .navbar-right img {
+    width: 20px;
+  }
+
+  .navbar-right button {
+    font-size: 15px;
+    padding: 7px 20px;
+  }
+}
+
+
+@media screen and (max-width: 750px) {
+  .navbar-menu {
+    display: none;
+  }
+}
+
